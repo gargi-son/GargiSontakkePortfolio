@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio Details - Personal Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyResume - v4.10.0
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <main id="main">
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <!-- <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-details-1.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-details-2.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-details-3.jpg" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div> -->
+
+          <div >
+            <!-- <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Web design</li>
+                <li><strong>Client</strong>: ASU Company</li>
+                <li><strong>Project date</strong>: 01 March, 2020</li>
+                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+              </ul>
+            </div> -->
+            <div class="portfolio-description">
+              <h2 class="text-center">Pac <span class="primary1">Man</span></h2>
+              <p>&emsp;&emsp;Adapted from the UC Berkeley curriculum, these Pacman projects are done as part of the Introduction to Artificial
+                Intelligence coursework at George Mason University. These projects are briefly divided into 4 sub-projects, each of which deep dives into various concepts of 
+                Artificial Intelligence:
+                <br><br>
+
+                <b><span class="primary1">Project 1: Search( DFS, BFS, A*,  UCS): </span></b><br>
+                &emsp;&emsp;Project 1 starts with basic exercises of search algorithms and uses the Pacman game as the reference to explore 
+                different search algorithm concepts that are used in a plethora of real-world applications.<br> 			
+                &emsp;&emsp;Here, the Pacman is programmed such that it successfully satisfies various use cases like finding the food dot in a maze 
+                using DFS, BFS, and A* algorithms; finding all the corners by using heuristics functions, and many more. 
+                These algorithms, implemented using python, are the basis of almost every navigation problem in the real world.  
+                <br><br>
+
+                <b><span class="primary1">Project 2: Multiagent Search: Reflex agents, Minimax, Alpha-Beta pruning, Expectimax, Evaluation function:</span> </b><br>
+            &emsp;&emsp;Continuing with the Pacman maze game to explore the artificial intelligence concepts, this project focuses on 
+                modeling Pacman both as an adversarial as well as a stochastic search problem. Using Python as the base programming language,
+                we designed Pacman along with external agents including ghosts. This prepares the Pacman to take appropriate actions in 
+                response to the randomness generated through these agents, making it more intelligent. The actions taken are based on the 
+                evaluation function logic coded for the Pacman, to evaluate the state-action pairs.<br>
+            &emsp;&emsp;The search mechanisms used here, minimax and expectimax, are a little more complex and use alpha-beta pruning to 
+                explore the minimax tree. These form the basis of the game theory and building game-playing agents, capable of matching wits 
+                with the strongest human minds to play games like chess and checkers.
+                <br><br>
+
+                <b><span class="primary1">Project 3: Reinforcement Learning: Value Iteration, Policies, Q-learning, Approximate Q-learning</span> </b><br>
+            &emsp;&emsp;The goal of this project is to understand Model-based and Model-free reinforcement learning algorithms by 
+                implementing the concepts of value iteration and q-learning.<br>
+                &emsp;&emsp;Q-learning enables the agent to learn from trial and error from the interactions with the real environment 
+                through its update method. We also introduce randomness to best match the real-world scenarios and allow the q-learning 
+                agent to make decisions based on the current q-state values.<br>
+            &emsp;&emsp;The above concept is then applied to a robot crawler, where the goal of the robot crawler is to move forward, 
+                from point A to B. The crawler initially makes mistakes, unable to achieve its goal, but with every iteration, it learns 
+                and forms the best policy to move forward.<br>
+            &emsp;&emsp;The other implementation of reinforcement learning is in a game of PacMan, where it learns the values of 
+                positions and actions by exploring every possible combination, failing, and starting again. Once the training is complete, 
+                Pacman is put in the testing environment where it achieves its goal by the formulated policy.
+                <br><br>
+
+                <b><span class="primary1">Exact and Approximate Inference, Joint Particle filter: </span> </b><br>
+            &emsp;&emsp;This last project advances into developing sensors for Pacman to locate and eat invisible ghosts. The idea is 
+                to make the Pacman intelligent, wherein it can predict not only where the ghost may be, but also the possible ways in which
+                the ghost may move. To achieve this, we make use of exact and approximate inference methods to update the agent’s belief 
+                distribution to help us track the ghosts better. 
+                <br><br>
+                <span class="primary1">Tools Used: </span>  Python, Autograder.
+                <br><br>
+               <span class="primary1">GitHub Link:</span>  <a href="https://github.com/gargi-son/Pacman-Projects-in-Artificial-Intelligence" target="_blank">Click Here</a>
+
+
+                </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

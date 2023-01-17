@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio Details - Personal Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyResume - v4.10.0
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <main id="main">
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+          <div >
+            <div class="portfolio-description">
+              <h2 class="text-center">Systems <span class="primary1">Programming</span> </h2>
+              <p>&emsp;&emsp; These projects delved into getting a hands-on introduction to the systems level of programming with an emphasis on data structures 
+                and interfacing with operating systems. It focused on fundamental data structures needed to design and implement systems applications. 
+                It also touched upon Unix Application Programming Interface, signals, threads, and interprocess communications. 
+                These projects were implemented  using C, with special topics in both Java and Python.Described below are a few projects along with the link to 
+                their github repo:
+
+                <br><b><span class="primary1">IPC System Function: </span></b><br> 
+                <b>Overview: </b> Most computers on the internet have a 32 bit Internet protocol Version (IPv4) address. 
+                As reading these addresses would be difficult using binary or hexadecimal notation, IPv4 addresses are usually represented in dotted notation.
+                For purposes of representation, the 32 bits composing the address may be divided into four octets written aas decimal numbers, each ranging from 
+                0 to 255 and concatenated as a character string with a full stop(ASCII 46) between each number.
+                For example,
+
+                <div class="swiper-slide text-center">
+                  <img src="assets/img/portfolio/sysprog.png" width="60%" height="60%" alt="Welcome Page image" >
+                </div>
+                <br><br>
+
+                &emsp;&emsp; The first two components of the address indicate the computer’s locality on the network. In the above example, the locality is 
+                specified by the ordered pair: <b>172</b> and <b>16</b>. Locally, computers are often known by an **alias** (nickname) as well. 
+                The goal is to design and write a program to process a list of Internet addresses from a file “CS531_Inet.txt”. For example, each line in 
+                “CS531_Inet.txt” will contain an addresses/alias pair as shown below: <br>
+    
+                <b>111.22.3.44 platte</b><br>
+    
+                <b>131.250.95.21 jet</b><br>
+                
+                <b>172.66.7.88 wabash</b><br>
+                
+                <b>111.22.5.66 green</b><br>
+                
+                <b>131.250.47.63 baker</b><br>
+                
+                &emsp;&emsp;Each address and each alias within the file is unique. Alias names are NOT case sensitive. For the sake of the assignment I created a test file 
+                using a sample format. <br>
+
+                <br><b><span class="primary1">Program Structure and Design: </span></b><br> 
+                &emsp;&emsp; The program structure involved creating a structure type called address_t with components for the four integers of an IPv4 address 
+                along with a fifth component in which to store an associated alias(key field) of up to 10 characters. I also created a singly linked list of 
+                address_t structures which will contain all of the address/alias pairs read in from the the “CS531_Inet.txt” file. For this exercise, we consider 
+                the linked list to be unsorted.<br>
+                
+                Once the linked list has been created, the next task is to present the user with the following options:<br>
+                1) <b>Add address: </b> Prompt user for an IPv4 address/alias pair. Both data elements are read in from the keyboard as character strings. 
+                The address string will be parsed and the four component integers will be stored separately (hint: use sscanf()). If either the address or alias 
+                already exists within the list, display an error message and redisplay the menu.
+                <br>
+                2)<b>Look up Address: </b> Prompt user for an alias, and display the corresponding address. If the alias does not exist within the list, display 
+                an error message and redisplay the menu.
+                <br>    
+                3)<b>Update address: </b> Prompt user for an alias and display the corresponding address. Allow user to update the address and have the newly 
+                entered address replace the old address within the linked list *assuming* the new address does not already exist within the list. If the alias 
+                does not exist within the list, or the newly entered address is a duplicate, display an error message and redisplay the menu.
+                <br>    
+                4)<b>Delete address:</b> Prompt user for an alias, and display the corresponding address. Confirm that user wishes to delete this node from the 
+                linked list. If the alias does not exist within the list, display an error message and redisplay the menu.
+                <br>    
+                5)<b>Display list: </b> Display all address/alias pairs within the list. For this exercise, the list is unsorted. If the list is empty, 
+                print a message to that effect and redisplay the menu. Also display the number of nodes within the list.
+                <br>    
+                6)<b>Display aliases for location: </b>Prompt user for an address location. (i.e. two separately entered values between 0 – 255). 
+                If either value is out of range, reprompt. List all aliases that map to this location. If the location does not exist within the list, 
+                display an error message.
+                <br>    
+                7)<b>Save to file: </b> Prompt user for a file name, and save the revised list to the specified file keeping file format consistent with that of 
+                the input file (i.e. one address/alias pair per line.)
+                <br>    
+                8)<b>Quit:</b> Exit program
+                <br>    
+                The global variable structure used in the code is as follows:
+                <br>    
+                    struct address_t 
+                    <br>{                
+                    <br>int octet[4];     
+                    <br>char alias[11];   
+                    <br>struct address_t *next; 
+                    <br>}
+                    <br>struct address_t *head = NULL;
+                    
+                    <br><b><span class="primary1">Binary Search Tree: </span></b><br> 
+
+                    &emsp;&emsp; The overall structure of this project is similar to the previous one. The only change is in the Linked list. 
+                    Here, the linked list was replaced with a Binary Search Tree(BST). 
+                    <br><b>Program structure and Design: </b> The structure type is called <b>address_t </b> similar to that used previously. 
+                    In addition, <b>address_t </b>  will also contain the following two fields: <br>
+                        
+                        Struct address_t *leftChild, *rightChild;
+                        
+                    <br>&emsp;&emsp; As CS531_Inet.txt is being read in, the data will be stored in a BST composed of <b>address_t </b> structures containing 
+                    the address/alias pairs read in from the file. Once the BST has been created, the user will receive the following menu options:
+                        
+                        <br>1) Add address
+                        
+                        <br>2) Look up address
+                        
+                        <br>3) Update address
+                        
+                        <br>4) Delete address
+                        
+                        <br>5) Display list
+                        
+                        <br>6) Display aliases for location
+                        
+                        <br>7) Save to file
+                        
+                        <br>8) Quit
+                        <br>
+                    <b>Display list and Display aliases for location shall be based on Inorder Traversal</b>
+                    <br>1) Delete address, Look up address, and Display aliases for location; will display an error message if the address (or location) 
+                    entered is not listed. Following the error message, the menu will be redisplayed.
+                    <br>2) A separate UDF (user defined function) will be defined for each menu option.
+                    <br>3) No duplicate aliases or address are allowed. If attempted, display an appropriate error message followed by the menu.
+
+                <br><br>
+                <span class="primary1">Languages Used: </span>  C programming.
+                <br><br>
+                <span class="primary1">GitHub Link:</span>  <a href="https://github.com/gargi-son/Assignments-in-Systems-Programming" target="_blank">Click Here</a>
+
+
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

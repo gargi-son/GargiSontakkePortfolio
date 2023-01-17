@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio Details - Personal Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyResume - v4.10.0
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <main id="main">
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+          <!-- <div class="col-lg-8"> -->
+          <div >
+            <div class=" portfolio-description">
+              <h2 class="text-center">Dynamic <span class="primary1">Forms</span></h2>
+              <p>
+                &emsp;&emsp; This project primarily focused on creating a Single Page Application in Angular using RESTful Web services and JPA/Hibernate. 
+                For the backend functionality, we utilized the Amazon Relational Database Service to persist and read data to/ from a relational database. 
+                <br><br>
+
+                <b><span class="primary1">Front-end Functionality</span></b><br>
+                &emsp;&emsp;The single page application is developed using VSCode as a Student Survey Form in Angular. We leveraged the Node.js functionality along with 
+                Angular to develop this project. It has the following layout:
+                1) Welcome page, that has two links that redirect the user to a Form and a Survey list page. 
+                1) Survey Form Page,  that allows a prospective student to fill out a survey form.
+                2) Survey Display Page, allowing them to view all the surveys taken to date.
+                These are created in the form of different angular components, which then contain the code files for each functionality. To have effective
+                routing and navigation within the application, we utilized typescript and imported routing modules likes RouterModule and Routes from Angular.
+                <br><br>
+
+                <b><span class="primary1">Developing the Backend —> Creating a Database using Amazon RDS + Developing RESTful Web Services</span></b><br>
+                &emsp;&emsp;We used Amazon’s Relational Database Service to create a MySQL database.
+                Restful web services act as a bridge that connects the front end to the back end. For this part of the project, we created a Spring Boot 
+                application and imported it as a Maven Project. Using Eclipse as our main IDE, we created classes for controller, service and entity with 
+                all its properties. The controller acts as a starting point and has a @RequestMapping annotation that indicated the API to be hit. We also 
+                defined the methods that we used like GET, POST, etc. Another annotation that we used was the @Autowire that avoided the creation of objects.  
+                The flow of the data is as follows:
+                <br><br>
+                <div class="swiper-slide text-center">
+                  <img src="assets/img/sprbootarch.png" width="60%" height="60%" alt="Springboot architecture image" >
+                </div>
+                <br><br>
+
+                The data object layer is where we write the SQL statements within the functions. We also establish connections to the database and the 
+                database connection properties are mentioned in the application.properties file.
+                <br><br>
+
+                <b><span class="primary1">Containerizing/Deploying the Application</span></b><br>
+                &emsp;&emsp;The first step in containerizing an application is Creating a Docker Image and Pushing it to DockerHub. We do that by first creating a 
+                Docker file that has a bunch of executable commands, building that image and then pushing it to DockerHub. Next Step in the process is 
+                creating an EC2 instance on the Amazon Web Services Management Console and logging into it via the terminal to install Docker on the 
+                instance. We also create an Identity and Access Management User on the console. To deploy the containerized application on Kubernetes, 
+                we use the Rancher Tool. We first start Rancher on the EC2 machine to get the login credentials. Next, after logging in to the Rancher,
+                we create a Kubernetes Cluster,  and then deploy our container image from there. This is done by defining a bunch of parameters like Node 
+                Ports, Number of Replicas, container image names and so on.
+                <br><br>
+
+                <b><span class="primary1">The end result</span></b><br><br>
+                
+                <b class="primary1">Welcome Page</b><br>
+                <div class="swiper-slide text-center">
+                  <img src="assets/img/works/Welcomepage.png" width="60%" height="60%" alt="Welcomepage image" >
+                </div>
+                <br>
+
+                <b class="primary1">Survey Form</b><br>
+                <div class="swiper-slide text-center">
+                  <img src="assets/img/works/SurveyForm.png" width="60%" height="60%" alt="Survey Form image" >
+                </div>
+                <br>
+
+                <b class="primary1">Survey List</b><br>
+                <div class="swiper-slide text-center">
+                  <img src="assets/img/works/SurveyList.png" width="60%" height="60%" alt="Survey List image" >
+                </div><br><br>
+
+                <b><span class="primary1">TroubleShooting</span></b>
+                <p>
+                    <ul>
+                        <li>1. CORS error - We fixed this by adding @Cross-Origin
+                            annotation in our spring boot application right before the
+                            @RequestMapping annotation.</li>
+                        <li>EC2 Instance Creation for Rancher - Couldn’t launch Rancher
+                            with Ubuntu 22.04 AMI. We used Ubuntu 20.04 AMI and this
+                            issue was resolved.</li> 
+                        <li> 3. HTTP ERROR - Resolved it by importing http header module in
+                            the ts file.</li>   
+                        <li>4. Multiple connections error - Do not create multiple
+                            connections to DB.</li>    
+                        <li>5. 401 authentication error - When trying to access the
+                            deployed application from rancher we got 401 authentication
+                            error. We resolved it by adding the node port number in the
+                            URL.</li>    
+                       <li>6. Argument of type not assignable to parameter type 'never'
+                        error - We encountered this error while connecting the backend
+                        api’s in the angular ts file. We resolved this by creating
+                        a function and defining a variable User of type any and
+                        then calling the api’s within that function.</li>    
+                    </ul>
+                </p>
+                <b><span class="primary1">Tools/Technologies Used: </span></b>  Angular, SpringBoot, AWS, VSCode, Docker, Rancher, MySQL.
+                <br><br>
+                <b><span class="primary1">GitHub Link: </span></b><a href="https://github.com/gargi-son/University-Feedback-System/tree/main/HW3%20SPAs" target="_blank">Click Here</a>
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
