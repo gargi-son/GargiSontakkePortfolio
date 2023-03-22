@@ -47,15 +47,15 @@ s<!DOCTYPE html>
 
           <div >
             <div class="portfolio-description">
-              <h2 class="text-center">Retirement  <span class="primary1">Planning Model</span>
+              <h2 class="text-center">The Retirement <span class="primary1">Planning Model</span></h2>
               <p>
-                <b><span class="primary1"> Overview </span></b><br>
+                <h5><b><span class="primary1"> Overview </span></b><br></h5>
 
-                &emsp;&emsp; Retirement planning is crucial in providing for a person’s future financial stability. Among the preparation tools we researched,
-                 none provide personalized recommendations to users. To explore solutions to this issue, for our final project, we developed a retirement planning
-                 tool, which computes detailed recommendations via three systemfeatures. The first feature diagnoses a person’s current retirement preparation status; 
-                 the second recommends a pareto-optimal set of asset allocation weights and contribution amounts when each of the user’s accounts aredistributed among 
-                 three types of funds, US Stock, International Stock, and Bonds; the third computes the investment amount required for a user to purchase an annuity at 
+                &emsp;&emsp; Retirement planning is crucial in providing for a person’s future financial stability. Among the preparation tools available,
+                 none provide personalized recommendations to users. To explore solutions to this issue, we developed a retirement planning
+                 tool, which computes detailed recommendations via three system features. The first feature diagnoses a person’s current retirement preparation status; 
+                 the second recommends a pareto-optimal set of asset allocation weights and contribution amounts when each of the user’s accounts are distributed among 
+                 three types of funds, US Stock, International Stock, and Bonds; and the third computes the investment amount required for a user to purchase an annuity at 
                  retirement. <br>
                 
                 &emsp;&emsp; There are both public and private retirement programs in the United States, and a complex web of account choices and legal requirements. 
@@ -67,16 +67,47 @@ s<!DOCTYPE html>
 
                 &emsp;&emsp; However, the American Social Security system is more of a foundational safety net since it cannot fully maintain the quality of life in 
                 old age. As a result, people usually need to supplement their old age pension themselves. For this reason, many tax-advantaged options for private 
-                and employer pension plans are offered. Listed below are a few of them:<br>
-                <br>IRAs
-                <br>401(k)
-                <br>HSA
-                <br>Brokerage
-                <br>Mutual Funds and ETFs:
+                and employer pension plans are offered. Listed below are a few of them:<br><br>
+                <ul>
+                  <li>&emsp;<b>IRAs :</b> IRA stands for Individual Retirement Account. This is a long-term personal savings account that individuals with an income
+                    can use to save for the future &emsp;and enjoy certain tax advantages. When an individual opens an IRA they may choose to invest in a wide range 
+                    of financial products, including stocks, bonds, &emsp;exchange-traded funds(ETFs), and mutual funds. There are primarily four types of IRAs, 
+                    depending on different rules regarding eligibility, taxation, and withdrawals: 
+                    <br>
+                    &emsp;<b>Traditional IRA:</b> This allows the user to contribute pre-tax dollars to the retirement account that can grow tax-deferred. 
+                    The contributions to a traditional IRA may be tax deductible depending on factors such as taxpayer’s income, tax-filing status, etc. 
+                    Unlike Roth IRA contributions, traditional IRA contributions are deductible from the current taxable income. So, if someone’s contribution 
+                    to their IRA is $6000, they can claim that amount as a deduction on their income tax return and the Internal Revenue Service will not apply 
+                    income tax to those earnings. However, when that individual withdraws money from the account during retirement, earnings are taxed at their 
+                    ordinary income tax rate.<br>
+                    &emsp;<b>Roth IRA:</b> This is a type of tax-advantaged individual retirement account funded with after-tax dollars. With a Roth IRA, contributions 
+                    and earnings grow tax-free after the age of 59 and a half and can also be withdrawn without any taxes. The biggest distinction between Roth and 
+                    Traditional IRAs is the way they both are taxed. Roth IRAs are funded with after-tax dollars, meaning the contributions are not tax-deductible, 
+                    but the investment may grow tax-free. The allowable investments in a Roth IRA includes mutual funds, stocks, bonds, exchange-traded funds(ETFs), 
+                    certificates of deposit(CDs), money market funds, and even cryptocurrency. This type of IRA is best when the marginal taxes are higher in 
+                    retirement than they are before it.<br>
+                    &emsp;<b>Simplified Employee Pension(SEP) IRA: </b> This is a type suitable for small business owners and self-employed individuals, where the employer 
+                    is allowed a tax-deduction for contributions made to a SEP IRA. The contributions are made to each eligible employee’s plan on a discretionary basis. 
+                    The SEP IRAs have a higher annual contribution limit than the standard IRAs. They also can receive employer contributions like 401(k) and are treated 
+                    like traditional IRAs for tax purposes and allow the same investment options. <br>
+                    &emsp;<b>Savings Incentive Match Plan for Employees(SIMPLE) IRA:</b> A SIMPLE IRA is a retirement savings plan that can be used by businesses with 100 or 
+                    fewer employees. Employers have the choice of making a non-elective contribution of 2% of the employer’s salary or a dollar-for-dollar matching 
+                    contribution of the employee’s contributions to plan up to 3% of their salary. This type of IRA is easy to set up, with just an initial plan document 
+                    and annual disclosures to employees. Employers also get a tax deduction for the contributions they make for employees. One drawback of this type is 
+                    that the business owner cannot save as much for retirement as with other small business retirement plans, such as the SEP or 401(k).<br>
+                    &emsp;<b>Rollover IRA:</b> In this type of IRA, you contribute the money ‘rolled over’ from a qualified retirement plan into this traditional IRA. 
+                    Rollovers involve moving eligible assets from an employer-sponsored plan such as a 401(k) or 403(b) into an IRA.
+                  </li>
+                  <br>
+                  <li>&emsp;<b>401(k) : </b></li>
+                  <li>&emsp;<b>HSA : </b></li>
+                  <li>&emsp;<b>Brokerage : </b></li>
+                  <li>&emsp;<b>Mutual Funds and ETFs : </b></li>
+                </ul>
                 
-                <br><br>&emsp;&emsp; The inspiration for our system is the three-fund portfolio which is a simple retirement strategy that is employed by most major 
+                &emsp;&emsp; The inspiration for our system is the three-fund portfolio which is a simple retirement strategy that is employed by most major 
                 brokerages’ Target Date Funds and championed by the Bogleheads. The Bogleheads are a group of fans of John Bogle, the founder of Vanguard and 
-                creator of the first index 5 fund). Specifically, according to [38], the portfolio consists of three diverse, passively managed funds (as they 
+                creator of the first index 5 fund. Specifically, according to [38], the portfolio consists of three diverse, passively managed funds (as they 
                 incur low cost):, one domestic stock, one international stock and one bond fund. We allow our user to select one fund for each of these categories.
 
                 <br><br>&emsp;&emsp; We drew some inspiration for our features (including the structure of our GUI, and backend functionality) from a few current retirement
