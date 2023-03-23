@@ -70,41 +70,40 @@
 
             <div class="portfolio-description">
               <!-- <h2>This is an example of portfolio detail</h2> -->
-              <h2 class="text-center">AWS <span class="primary1">Website Hosting</span>
+              <h2 class="text-center">AWS <span class="primary1">Website Hosting</span></h2>
               <p>
                   <b><span class="primary1">Part 1: Creating and hosting it on AWS</span></b><br>
-                  &emsp;&emsp; The purpose of this project was twofold. The first part consisted creating a static personal website using hosting it on the AWS cloud using AWS Simple Storage Service.
+                  &emsp;&emsp; The purpose of this project was twofold: The first part consisted creating a static personal website and hosting it on the AWS cloud using AWS Simple Storage Service.
                   <br><br>
 
                   <b><span class="primary1">Creating a website</span></b><br>
                   &emsp;&emsp; There are many ways of creating a website by leveraging different frameworks, libraries and programming languages. This website was created using HTML for structure and CSS for styling.
                   This was done by using different in-built functions and class to effectively structure the webpage. Few of them are listed below: <br>
                   <ul>
-                      - The <b>&lt;div&gt;</b> tag: The division tag was used to make division of content in a web page like text, images, headers, etc. It groups elements together so that they be styled using CSS.
-                      <br>
-                  - The <b>&lt; a href &gt;</b>attribute with anchor element: This tag was used to create a hyperlink on a webpage and link the webpage to other webpages. It provides an absolute reference or a relative reference as its “href” value.
-                      <br>
-                  - The <b>onClick</b> event handler: It is an event attribute that executes a script when the button is clicked. It is also used to call a function when the button is clicked. Here, the onClick attribute was used to call the toggleFunction().
-                      <br>
-                  - The <b>&lt;span&gt;</b> tag: We used this tag as an inline container to mark up a part of a text or a document. Span is similar to div but &lt;div&gt; is a block-level element and &lt;span&gt; is an inline elements.
-                      <br>
-                  - The <b>&lt;id&gt;</b> attribute: This attribute specifies a a unique id for an HTML element, where each value of the attribute should be unique within the document.  <br>
-                  <br>
-                  </ul>
+                      <li>The <b>&lt;div&gt;</b> tag: The division tag was used to make division of content in a web page like text, images, headers, etc. It groups elements together so that they be styled using CSS.
+                      </li>
+                  <li>The <b>&lt; a href &gt;</b>attribute with anchor element: This tag was used to create a hyperlink on a webpage and link the webpage to other webpages. It provides an absolute reference or a relative reference as its “href” value.
+                      </li>
+                  <li>The <b>onClick</b> event handler: It is an event attribute that executes a script when the button is clicked. It is also used to call a function when the button is clicked. Here, the onClick attribute was used to call the toggleFunction().
+                      </li>
+                  <li>The <b>&lt;span&gt;</b> tag: We used this tag as an inline container to mark up a part of a text or a document. Span is similar to div but &lt;div&gt; is a block-level element and &lt;span&gt; is an inline elements.
+                      </li>
+                  <li>The <b>&lt;id&gt;</b> attribute: This attribute specifies a a unique id for an HTML element, where each value of the attribute should be unique within the document.  <br>
+                  </li>
+                </ul>
 
+                <b><span class="primary1">Hosting on AWS:</span></b><br>
 
-                  <b><span class="primary1">Hosting on AWS:</span></b><br>
-
-                  &emsp;&emsp; Once we created the web application, the next step was to make it accessible to everyone on a public server. One of the effective ways to do that was to host this website using Amazon Web Services. 
+                &emsp;&emsp; Once we created the web application, the next step was to make it accessible to everyone on a public server. One of the effective ways to do that was to host this website using Amazon Web Services. 
                   AWS offers cloud web hosting solutions at low cost with minimum effort. Another benefit of hosting the website on AWS was that it offers scalability of the application and has a pay-as-you-go pricing model.
                   
-                  <br><br>
+                <br><br>
 
                   <b><span class="primary1">How to host your website on AWS</span></b><br>
                   <ul>
-                      1) Amazon offers a plethora of services to the customers and one such service for hosting a static website is Amazon Simple Storage Service or Amazon S3.
+                      1) Amazon offers a plethora of services to the customers. One such service for hosting a static website is <b>Amazon Simple Storage Service</b> or <b>Amazon S3</b>.
                       <br>2) S3 offers cost-effective storage classes and easy to manage features that help organize data and configure access controls while catering to the customer requirement.
-                      <br>3) The first step is to create an Amazon S3 bucket and configure the settings. Since we want our website to be publicly accessible, we will unselect the “Block all Public Access” option.
+                      <br>3) The first step is to create an Amazon S3 bucket and configure the settings. Since we want the website to be publicly accessible, we will unselect the “Block all Public Access” option.
                       <br>4) We also enable Static Website Hosting under properties. Here, we specify the name of the main HTML page and an error page.
                       <br>5) Next step is to upload the files to the bucket to be hosted. The URL of the website is accessible under Static Website Hosting under properties.
                       <br><br>
@@ -133,22 +132,22 @@
                   <b><span class="primary1">TroubleShooting</span></b>
                   <p>
                       <ul>
-                          <li>1. CORS error - We fixed this by adding @Cross-Origin
+                          <li><b>CORS error - </b>We fixed this by adding @Cross-Origin
                               annotation in our spring boot application right before the
                               @RequestMapping annotation.</li>
-                          <li>EC2 Instance Creation for Rancher - Couldn’t launch Rancher
+                          <li><b>EC2 Instance Creation for Rancher -</b> Couldn’t launch Rancher
                               with Ubuntu 22.04 AMI. We used Ubuntu 20.04 AMI and this
                               issue was resolved.</li> 
-                          <li> 3. HTTP ERROR - Resolved it by importing http header module in
+                          <li><b>HTTP ERROR - </b>Resolved it by importing http header module in
                               the ts file.</li>   
-                          <li>4. Multiple connections error - Do not create multiple
+                          <li><b>Multiple connections error -</b> Do not create multiple
                               connections to DB.</li>    
-                          <li>5. 401 authentication error - When trying to access the
+                          <li><b>401 authentication error -</b> When trying to access the
                               deployed application from rancher we got 401 authentication
                               error. We resolved it by adding the node port number in the
                               URL.</li>    
-                         <li>6. Argument of type not assignable to parameter type 'never'
-                          error - We encountered this error while connecting the backend
+                         <li><b>Argument of type not assignable to parameter type 'never'
+                          error -</b> We encountered this error while connecting the backend
                           api’s in the angular ts file. We resolved this by creating
                           a function and defining a variable User of type any and
                           then calling the api’s within that function.</li>    
