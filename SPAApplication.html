@@ -55,10 +55,10 @@
 
                 <b><span class="primary1">Front-end Functionality</span></b><br>
                 &emsp;&emsp;The single page application is developed using VSCode as a Student Survey Form in Angular. We leveraged the Node.js functionality along with 
-                Angular to develop this project. It has the following layout:
-                1) Welcome page, that has two links that redirect the user to a Form and a Survey list page. 
-                1) Survey Form Page,  that allows a prospective student to fill out a survey form.
-                2) Survey Display Page, allowing them to view all the surveys taken to date.
+                Angular to develop this project. It has the following layout:<br>
+                1) Welcome page, that has two links that redirect the user to a Form and a Survey list page. <br>
+                2) Survey Form Page,  that allows a prospective student to fill out a survey form.<br>
+                3) Survey Display Page, allowing them to view all the surveys taken to date.<br>
                 These are created in the form of different angular components, which then contain the code files for each functionality. To have effective
                 routing and navigation within the application, we utilized typescript and imported routing modules likes RouterModule and Routes from Angular.
                 <br><br>
@@ -112,24 +112,17 @@
                 <b><span class="primary1">TroubleShooting</span></b>
                 <p>
                     <ul>
-                        <li>1. CORS error - We fixed this by adding @Cross-Origin
-                            annotation in our spring boot application right before the
-                            @RequestMapping annotation.</li>
-                        <li>EC2 Instance Creation for Rancher - Couldn’t launch Rancher
-                            with Ubuntu 22.04 AMI. We used Ubuntu 20.04 AMI and this
+                        <li><b>CORS error -</b>  We fixed this by adding @Cross-Origin annotation in our spring boot application right before the
+                            <b>@RequestMapping</b> annotation.</li>
+                        <li><b>EC2 Instance Creation for Rancher -</b> Couldn’t launch Rancher with Ubuntu 22.04 AMI. We used Ubuntu 20.04 AMI and this
                             issue was resolved.</li> 
-                        <li> 3. HTTP ERROR - Resolved it by importing http header module in
-                            the ts file.</li>   
-                        <li>4. Multiple connections error - Do not create multiple
+                        <li><b>HTTP ERROR -</b> Resolved it by importing http header module in the ts file.</li>   
+                        <li> Multiple connections error - Do not create multiple
                             connections to DB.</li>    
-                        <li>5. 401 authentication error - When trying to access the
-                            deployed application from rancher we got 401 authentication
-                            error. We resolved it by adding the node port number in the
-                            URL.</li>    
-                       <li>6. Argument of type not assignable to parameter type 'never'
-                        error - We encountered this error while connecting the backend
-                        api’s in the angular ts file. We resolved this by creating
-                        a function and defining a variable User of type any and
+                        <li><b>401 authentication error -</b> When trying to access the deployed application from rancher we got 401 authentication
+                            error. We resolved it by adding the node port number in the URL.</li>    
+                       <li><b>Argument of type not assignable to parameter type 'never' error -</b> We encountered this error while connecting the backend
+                        api’s in the angular ts file. We resolved this by creating a function and defining a variable User of type any and
                         then calling the api’s within that function.</li>    
                     </ul>
                 </p>
